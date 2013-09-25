@@ -57,10 +57,14 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\Elake.css" />
     <Content Include="eläkeLaskuri.aspx" />
     <Content Include="etusivu.aspx" />
+    <Content Include="index.aspx" />
     <Content Include="tokasivu.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="eläkeLaskuri.aspx.cs">
@@ -72,13 +76,22 @@
     </Compile>
     <Compile Include="etusivu.aspx.cs">
       <DependentUpon>etusivu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="etusivu.aspx.designer.cs">
       <DependentUpon>etusivu.aspx</DependentUpon>
     </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="tokasivu.aspx.cs">
       <DependentUpon>tokasivu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="tokasivu.aspx.designer.cs">
       <DependentUpon>tokasivu.aspx</DependentUpon>

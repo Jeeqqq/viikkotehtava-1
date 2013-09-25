@@ -1,0 +1,5 @@
+D:\G9206\viikkotehtava-1\Portfolio\Portfolio\obj\Debug\Portfolio.csprojResolveAssemblyReference.cache
+D:\G9206\viikkotehtava-1\Portfolio\Portfolio\bin\Portfolio.dll
+D:\G9206\viikkotehtava-1\Portfolio\Portfolio\bin\Portfolio.pdb
+D:\G9206\viikkotehtava-1\Portfolio\Portfolio\obj\Debug\Portfolio.dll
+D:\G9206\viikkotehtava-1\Portfolio\Portfolio\obj\Debug\Portfolio.pdb

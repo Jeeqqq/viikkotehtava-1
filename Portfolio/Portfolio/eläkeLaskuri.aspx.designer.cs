@@ -94,12 +94,12 @@ namespace Eläke {
         protected global::System.Web.UI.WebControls.Button plusPalkka;
         
         /// <summary>
-        /// eläke control.
+        /// elake control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox eläke;
+        protected global::System.Web.UI.WebControls.TextBox elake;
     }
 }
