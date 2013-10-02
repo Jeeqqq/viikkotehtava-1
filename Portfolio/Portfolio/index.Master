@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="index.master.cs" Inherits="Portfolio.index1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Kotitehtävä 3</title>
+    <link href="css/master.css" rel="stylesheet" type="text/css"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    
+    <form id="form1" runat="server">
+    <div>
+        <img src="img/banner.jpg" />
+        <br />
+        <asp:Menu ID="MainMenu" Orientation="Horizontal" runat="server" class="menu" OnMenuItemClick="MainMenu_MenuItemClick">
+            <Items>
+                <asp:MenuItem Text="Home" Value="Home"></asp:MenuItem>
+                <asp:MenuItem Text="Salesan leffat" Value="Salesa"></asp:MenuItem>
+                <asp:MenuItem Text="Kotitehtavat" Value="Kotitehtava"></asp:MenuItem>
+                <asp:MenuItem Text="About" Value="About"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+        <h1 class="H1">JAMK/Teknologia/ICT</h1>
+
+</body>
+</html>
