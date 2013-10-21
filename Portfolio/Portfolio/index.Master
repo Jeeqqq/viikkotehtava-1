@@ -5,7 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Kotitehtävä 3</title>
-    <link href="css/master.css" rel="stylesheet" type="text/css"/>
+    <link href="~/css/master.css" rel="stylesheet" type="text/css"/>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -13,7 +14,7 @@
     
     <form id="form1" runat="server">
     <div>
-        <img src="img/banner.jpg" />
+        <asp:Image runat="server" ID="banner" ImageUrl="img/banner.jpg"/>
         <br />
         <asp:Menu ID="MainMenu" Orientation="Horizontal" runat="server" class="menu" OnMenuItemClick="MainMenu_MenuItemClick">
             <Items>
@@ -28,6 +29,7 @@
     </div>
     </form>
         <h1 class="H1">JAMK/Teknologia/ICT</h1>
+        <div id="Error" runat="server"></div>
 
 </body>
 </html>

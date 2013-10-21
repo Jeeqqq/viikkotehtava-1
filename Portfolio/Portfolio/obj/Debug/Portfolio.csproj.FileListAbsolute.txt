@@ -8,3 +8,8 @@ D:\G9206\viikkotehtava-1a\Portfolio\Portfolio\bin\Portfolio.pdb
 D:\G9206\viikkotehtava-1a\Portfolio\Portfolio\obj\Debug\Portfolio.csprojResolveAssemblyReference.cache
 D:\G9206\viikkotehtava-1a\Portfolio\Portfolio\obj\Debug\Portfolio.dll
 D:\G9206\viikkotehtava-1a\Portfolio\Portfolio\obj\Debug\Portfolio.pdb
+D:\GIT\viikkotehtava-1\Portfolio\Portfolio\bin\Portfolio.dll
+D:\GIT\viikkotehtava-1\Portfolio\Portfolio\bin\Portfolio.pdb
+D:\GIT\viikkotehtava-1\Portfolio\Portfolio\obj\Debug\Portfolio.csprojResolveAssemblyReference.cache
+D:\GIT\viikkotehtava-1\Portfolio\Portfolio\obj\Debug\Portfolio.dll
+D:\GIT\viikkotehtava-1\Portfolio\Portfolio\obj\Debug\Portfolio.pdb

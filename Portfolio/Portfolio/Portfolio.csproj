@@ -57,47 +57,63 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="about.aspx" />
+    <Content Include="Palaute\palaute.aspx" />
+    <Content Include="teht2\about.aspx" />
     <Content Include="css\Elake.css" />
     <Content Include="css\master.css" />
-    <Content Include="eläkeLaskuri.aspx" />
-    <Content Include="etusivu.aspx" />
-    <Content Include="home.aspx" />
+    <Content Include="teht1\eläkeLaskuri.aspx" />
+    <Content Include="teht1\etusivu.aspx" />
+    <Content Include="teht2\home.aspx" />
     <Content Include="kotitehtavat.aspx" />
-    <Content Include="leffat.aspx" />
-    <Content Include="puu.aspx" />
-    <Content Include="tokasivu.aspx" />
+    <Content Include="teht2\leffat.aspx" />
+    <Content Include="teht2\puu.aspx" />
+    <Content Include="teht1\tokasivu.aspx" />
+    <Content Include="teht3\autot.aspx" />
+    <Content Include="teht4\Images\Anna2009.jpg" />
+    <Content Include="teht4\Images\Anna2010.jpg" />
+    <Content Include="teht4\Images\Anna2012.jpg" />
+    <Content Include="teht4\Images\Johanna2012.jpg" />
+    <Content Include="teht4\Images\Laura2012.jpg" />
+    <Content Include="teht4\LevykauppaX.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="about.aspx.cs">
+    <Compile Include="Palaute\palaute.aspx.cs">
+      <DependentUpon>palaute.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Palaute\palaute.aspx.designer.cs">
+      <DependentUpon>palaute.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Palaute\Palaute.cs" />
+    <Compile Include="teht2\about.aspx.cs">
       <DependentUpon>about.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="about.aspx.designer.cs">
+    <Compile Include="teht2\about.aspx.designer.cs">
       <DependentUpon>about.aspx</DependentUpon>
     </Compile>
-    <Compile Include="eläkeLaskuri.aspx.cs">
+    <Compile Include="teht1\eläkeLaskuri.aspx.cs">
       <DependentUpon>eläkeLaskuri.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="eläkeLaskuri.aspx.designer.cs">
+    <Compile Include="teht1\eläkeLaskuri.aspx.designer.cs">
       <DependentUpon>eläkeLaskuri.aspx</DependentUpon>
     </Compile>
-    <Compile Include="etusivu.aspx.cs">
+    <Compile Include="teht1\etusivu.aspx.cs">
       <DependentUpon>etusivu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="etusivu.aspx.designer.cs">
+    <Compile Include="teht1\etusivu.aspx.designer.cs">
       <DependentUpon>etusivu.aspx</DependentUpon>
     </Compile>
-    <Compile Include="home.aspx.cs">
+    <Compile Include="teht2\home.aspx.cs">
       <DependentUpon>home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="home.aspx.designer.cs">
+    <Compile Include="teht2\home.aspx.designer.cs">
       <DependentUpon>home.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.Master.cs">
@@ -114,27 +130,44 @@
     <Compile Include="kotitehtavat.aspx.designer.cs">
       <DependentUpon>kotitehtavat.aspx</DependentUpon>
     </Compile>
-    <Compile Include="leffat.aspx.cs">
+    <Compile Include="teht2\leffat.aspx.cs">
       <DependentUpon>leffat.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="leffat.aspx.designer.cs">
+    <Compile Include="teht2\leffat.aspx.designer.cs">
       <DependentUpon>leffat.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="puu.aspx.cs">
+    <Compile Include="teht2\puu.aspx.cs">
       <DependentUpon>puu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="puu.aspx.designer.cs">
+    <Compile Include="teht2\puu.aspx.designer.cs">
       <DependentUpon>puu.aspx</DependentUpon>
     </Compile>
-    <Compile Include="tokasivu.aspx.cs">
+    <Compile Include="teht1\tokasivu.aspx.cs">
       <DependentUpon>tokasivu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="tokasivu.aspx.designer.cs">
+    <Compile Include="teht1\tokasivu.aspx.designer.cs">
       <DependentUpon>tokasivu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teht3\Auto.cs" />
+    <Compile Include="teht3\autot.aspx.cs">
+      <DependentUpon>autot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teht3\autot.aspx.designer.cs">
+      <DependentUpon>autot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teht3\BLSerialisoija.cs" />
+    <Compile Include="teht4\Albumi.cs" />
+    <Compile Include="teht4\LevykauppaX.aspx.cs">
+      <DependentUpon>LevykauppaX.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teht4\LevykauppaX.aspx.designer.cs">
+      <DependentUpon>LevykauppaX.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -146,6 +179,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

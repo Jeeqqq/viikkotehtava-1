@@ -11,7 +11,8 @@ namespace Portfolio
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
+                      
         }
         protected void MainMenu_MenuItemClick(object sender, MenuEventArgs e)
         {
@@ -19,13 +20,13 @@ namespace Portfolio
 
             switch (e.Item.Value)
             {
-                case "Home": response.Redirect("home.aspx");
+                case "Home": response.Redirect("~/teht2/home.aspx");
                     break;
-                case "About": response.Redirect("about.aspx");
+                case "About": response.Redirect("~/teht2/about.aspx");
                     break;
-                case "Salesa": response.Redirect("leffat.aspx");
+                case "Salesa": response.Redirect("~/teht2/leffat.aspx");
                     break;
-                case "Kotitehtava": response.Redirect("kotitehtavat.aspx");
+                case "Kotitehtava": response.Redirect("~/kotitehtavat.aspx");
                     break;
                 default:
                     break;
