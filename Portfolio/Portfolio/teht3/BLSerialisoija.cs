@@ -30,6 +30,23 @@ namespace Portfolio
                 tw.Close();
             }
         }
+        public static void SerialisoiXml(string tiedosto, AutoLista ic)
+        {
+            XmlSerializer xs = new XmlSerializer(ic.GetType());
+            TextWriter tw = new StreamWriter(tiedosto);
+            try
+            {
+                xs.Serialize(tw, ic);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                tw.Close();
+            }
+        }
         public static void DeSerialisoiXml(string filePath, ref AutoLista leffat)
         {
             XmlSerializer deserializer = new XmlSerializer(typeof(AutoLista));
@@ -78,6 +95,24 @@ namespace Portfolio
 
                 FileStream xmlFile = new FileStream(filePath, FileMode.Open);
                 palautteet = (Palauteet)deserializer.Deserialize(xmlFile);
+                xmlFile.Close();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+
+            }
+        }
+        public static void deSerialisoiKayttajat(string filePath, ref Users kayttajat)
+        {
+            XmlSerializer deserializer = new XmlSerializer(typeof(Users));
+            try
+            {
+                FileStream xmlFile = new FileStream(filePath, FileMode.Open);
+                kayttajat = (Users)deserializer.Deserialize(xmlFile);
                 xmlFile.Close();
             }
             catch (Exception ex)

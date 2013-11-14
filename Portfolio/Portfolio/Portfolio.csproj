@@ -57,6 +57,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="data\Leffat.xml" />
+    <Content Include="data\LevykauppaX.xml" />
+    <Content Include="data\palaute.xml" />
+    <Content Include="data\users.xml" />
+    <Content Include="data\WanhatAutot.xml" />
     <Content Include="Palaute\palaute.aspx" />
     <Content Include="teht2\about.aspx" />
     <Content Include="css\Elake.css" />
@@ -75,6 +80,7 @@
     <Content Include="teht4\Images\Johanna2012.jpg" />
     <Content Include="teht4\Images\Laura2012.jpg" />
     <Content Include="teht4\LevykauppaX.aspx" />
+    <Content Include="teht7\teht7-8.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -169,6 +175,15 @@
     <Compile Include="teht4\LevykauppaX.aspx.designer.cs">
       <DependentUpon>LevykauppaX.aspx</DependentUpon>
     </Compile>
+    <Compile Include="teht7\BLAutot.cs" />
+    <Compile Include="teht7\teht7-8.aspx.cs">
+      <DependentUpon>teht7-8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teht7\teht7-8.aspx.designer.cs">
+      <DependentUpon>teht7-8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teht7\User.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.Master" />
@@ -179,7 +194,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="teht8\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
